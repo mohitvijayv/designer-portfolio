@@ -17,12 +17,13 @@ jobs:
           fetch-depth: 0
 
       - name: Push to deploy repo
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          DEPLOY_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global credential.helper store
-          echo "https://mohitvijayv:${DEPLOY_TOKEN}@github.com" > ~/.git-credentials
-          git remote add deploy https://github.com/mohitvijayv/designer-portfolio-mahima.git
-          git push deploy master:main --force
+          API_TOKEN_GITHUB: ${{ secrets.DEPLOY_REPO_TOKEN }}
+        with:
+          source-directory: "."
+          destination-github-username: "mohitvijayv"
+          destination-repository-name: "designer-portfolio-mahima"
+          target-branch: main
+          user-email: github-actions[bot]@users.noreply.github.com
+          user-name: github-actions[bot]
