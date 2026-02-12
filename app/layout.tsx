@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Designer Portfolio",
-  description: "Modern Designer Portfolio",
+  title: "Mahima Gupta — Brand & Visual Designer",
+  description: "Portfolio of Mahima Gupta, Brand & Visual Designer",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white scroll-smooth">
+      <body className="scroll-smooth">
         {children}
       </body>
     </html>
