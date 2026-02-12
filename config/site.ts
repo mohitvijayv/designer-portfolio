@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Mahima Gupta",
-  role: "Senior Graphic\nDesigner",
+  role: "Product \nDesigner",
   location: "based in Gurgaon, India.",
   greeting: "Hello, I'm Mahima,",
   tagline: "Senior Graphic Designer with 3.5+ years of experience in brand identity, performance creatives, and visual storytelling.",
