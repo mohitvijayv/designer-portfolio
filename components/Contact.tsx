@@ -57,12 +57,7 @@ export default function Contact() {
               >
                 {siteConfig.email}
               </a>
-              <a
-                href={`tel:${siteConfig.phone}`}
-                className="block text-navy font-medium hover:text-navy-light transition"
-              >
-                {siteConfig.phone}
-              </a>
+
               <a
                 href={siteConfig.linkedin}
                 target="_blank"
