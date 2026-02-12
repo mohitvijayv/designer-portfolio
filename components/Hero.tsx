@@ -69,7 +69,7 @@ export default function Hero() {
           {/* Circular photo — cropped to face closeup */}
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-navy/10">
             <Image
-              src="/mahima.jpg"
+              src="/mahima.JPG"
               alt={siteConfig.name}
               width={600}
               height={600}
