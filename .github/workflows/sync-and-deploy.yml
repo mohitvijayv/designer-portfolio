@@ -3,7 +3,7 @@ name: Sync to Deploy Repo
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   sync:
@@ -13,9 +13,10 @@ jobs:
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
+          ref: master
           fetch-depth: 0
 
       - name: Push to deploy repo
         run: |
           git remote add deploy https://x-access-token:${{ secrets.DEPLOY_REPO_TOKEN }}@github.com/mohitvijayv/designer-portfolio-mahima.git
-          git push deploy main --force
+          git push deploy master:main --force
