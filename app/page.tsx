@@ -10,7 +10,7 @@ const jsonLd = {
   name: "Mahima Gupta",
   jobTitle: "Senior Graphic Designer",
   url: "https://mahimagupta.vercel.app",
-  image: "https://mahimagupta.vercel.app/mahima.JPG",
+  image: "https://mahimagupta.vercel.app/mahima.jpeg",
   email: "mahimagupta7707@gmail.com",
   telephone: "+91-9217812776",
   address: {

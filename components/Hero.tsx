@@ -69,11 +69,11 @@ export default function Hero() {
           {/* Circular photo — cropped to face closeup */}
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-navy/10">
             <Image
-              src="/mahima.JPG"
+              src="/mahima.jpeg"
               alt="Mahima Gupta — Senior Graphic Designer based in Gurgaon, India"
               width={600}
               height={600}
-              className="w-full h-full object-cover object-top scale-[1.3]"
+              className="w-full h-full object-cover object-[100%_top] scale-[1.3]"
             />
           </div>
 
